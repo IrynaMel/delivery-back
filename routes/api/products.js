@@ -7,8 +7,8 @@ const controllers = require("../../controllers/products");
 
 router.get("/", ctrlWrapper(controllers.getAllProducts));
 
-router.post("/", ctrlWrapper(putOrder));
-
 router.get("/orders", ctrlWrapper(getOrders));
+
+router.post("/orders", ctrlWrapper(putOrder));
 
 module.exports = router;
